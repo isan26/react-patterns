@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Displayer : React.FC<{data : any}> = ({data}) => {
+const Displayer : React.FC<{data : any}> = ({data, ...props}) => {
     return (
-        <div>
-            Here is your data 
+        <div  {...props}>
+            Here is your data: 
             {JSON.stringify(data)}
         </div>
     )

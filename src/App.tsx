@@ -1,23 +1,37 @@
-import React from 'react';
+import React  from "react";
+import Header from "./components/Header";
+import TypeList from "./types/PatternListType";
 
-import './App.css';
+import CustomHook from "./patterns/CustomHooks";
+import HighOrderComponents from "./patterns/HighOrderComponent";
+import ExtensibleStyles from "./patterns/ExtensibleStyles";
+import Compound from "./patterns/Compound";
+import RenderProps from "./patterns/RenderProps";
+import StateInitializer from "./patterns/StateInitializer";
+import StateReducers from "./patterns/StateReducers";
+import Composition from "./patterns/Composition";
+import "./App.css";
+
+const patterns = {
+  "CustomHook": CustomHook,
+  "HighOrderComponents": HighOrderComponents,
+  "ExtensibleStyles": ExtensibleStyles,
+  "Compound": Compound,
+  "RenderProps": RenderProps,
+  "StateInitializer": StateInitializer,
+  "StateReducers": StateReducers,
+  "Composition": Composition,
+};
 
 function App() {
+  const [pattern, setPattern] = React.useState<TypeList>("CustomHook");
+
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header setPattern={setPattern} patternList={Object.keys(patterns) as TypeList[]} />
+      <div className="pattern">
+        {React.createElement(patterns[pattern])}
+      </div>
     </div>
   );
 }

@@ -5,7 +5,7 @@ import withDummyText from "./withDummyText";
 
 const HighOrderComponent = () => {
   const Display = withData(Displayer);
-  const DummyText = withDummyText(Display);
+  const DummyText = withDummyText(Displayer);
   return (
     <div>
       <Display />

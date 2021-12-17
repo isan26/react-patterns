@@ -3,7 +3,7 @@ import React from 'react'
 const StateInitializer = () => {
    return (
        <div>
-           RenderProps
+           State Initializer
        </div>
    )
 }

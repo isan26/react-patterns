@@ -3,7 +3,7 @@ import React from 'react'
 const ExtensibleStyles = () => {
    return (
        <div>
-           Compound
+           ExtensibleStyles
        </div>
    )
 }

@@ -1,8 +1,6 @@
 type TypeList =
 | "CustomHook"
 | "HighOrderComponents"
-| "ExtensibleStyles"
-| "Compound"
 | "RenderProps"
 | "StateInitializer"
 | "StateReducers"

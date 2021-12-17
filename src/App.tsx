@@ -4,8 +4,6 @@ import TypeList from "./types/PatternListType";
 
 import CustomHook from "./patterns/CustomHooks";
 import HighOrderComponents from "./patterns/HighOrderComponent";
-import ExtensibleStyles from "./patterns/ExtensibleStyles";
-import Compound from "./patterns/Compound";
 import RenderProps from "./patterns/RenderProps";
 import StateInitializer from "./patterns/StateInitializer";
 import StateReducers from "./patterns/StateReducers";
@@ -15,8 +13,6 @@ import "./App.css";
 const patterns = {
   "CustomHook": CustomHook,
   "HighOrderComponents": HighOrderComponents,
-  "ExtensibleStyles": ExtensibleStyles,
-  "Compound": Compound,
   "RenderProps": RenderProps,
   "StateInitializer": StateInitializer,
   "StateReducers": StateReducers,

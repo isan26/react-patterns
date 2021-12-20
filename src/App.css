@@ -2,6 +2,16 @@
   text-align: center;
 }
 
+button {
+  color: white;
+  background: #0074d9;
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+  margin : 10px;
+  cursor: pointer;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

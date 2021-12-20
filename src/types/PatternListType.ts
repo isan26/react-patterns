@@ -3,7 +3,6 @@ type TypeList =
 | "HighOrderComponents"
 | "RenderProps"
 | "StateInitializer"
-| "StateReducers"
 | "Composition";
 
 

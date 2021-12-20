@@ -6,7 +6,6 @@ import CustomHook from "./patterns/CustomHooks";
 import HighOrderComponents from "./patterns/HighOrderComponent";
 import RenderProps from "./patterns/RenderProps";
 import StateInitializer from "./patterns/StateInitializer";
-import StateReducers from "./patterns/StateReducers";
 import Composition from "./patterns/Composition";
 import "./App.css";
 
@@ -15,7 +14,6 @@ const patterns = {
   "HighOrderComponents": HighOrderComponents,
   "RenderProps": RenderProps,
   "StateInitializer": StateInitializer,
-  "StateReducers": StateReducers,
   "Composition": Composition,
 };
 
